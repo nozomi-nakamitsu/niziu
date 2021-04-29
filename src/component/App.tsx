@@ -1,4 +1,5 @@
 import React,{useState,useEffect}from 'react';
+import styled from 'styled-components';
 import './App.css';
 import logo from '../image/logo.jpeg';
 import mainImg from '../image/niziu_top.jpeg';
@@ -8,12 +9,16 @@ import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
 import DragHandleIcon from '@material-ui/icons/DragHandle';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { NoSimOutlined } from '@material-ui/icons';
+import LoadingModal from "./modal"
 
+type Props = {
 
+}
 
 const App = () => {
   const [screenIsSmall, setScreenIsSmall] = useState(window.innerWidth);
   const [onactive, setOnActive] = useState(false);
+  const [open, setOpen] = useState(false);
   useEffect(() => {
     window.addEventListener('resize', () => {
         setScreenIsSmall(window.innerWidth);
@@ -23,10 +28,13 @@ const App = () => {
   useEffect(() => {
     (async () => {
       const res1 = await  lordingHorizen();
-        window.setTimeout(function(){
+         window.setTimeout(function(){
         var LoadingPage =document.getElementsByClassName("LoadingPage")
         LoadingPage[0].classList.add("DisplayNone")
           }, 1000);
+        window.setTimeout(function(){
+        openModal()
+            }, 2500);
         })();
   }, []);
 
@@ -53,16 +61,26 @@ const App = () => {
   }
 
 
+  // グループメンバー追加モーダルを表示
+  const openModal=()=>{
+    setOpen(true)
+  }
+  const closeModal=()=>{
+    setOpen(false)
+  }
+
+
 
   return (
 
 <>
   {/* ロード画面 */}
-<div className="LoadingPage">
-<img src={logo} alt=""/>
-<div className="Text"><span className="Text-Span JS_ScrollAnimationItem"></span></div>
-</div>
+  <div className="LoadingPage">
+  <img src={logo} alt=""/>
+  <div className="Text"><span className="Text-Span JS_ScrollAnimationItem"></span></div>
+  </div>
 <div className="container">
+<LoadingModal open={open} closefunc={()=>closeModal()}></LoadingModal >
   {/* header */}
   <div className="header">
     <div className="headrLeft"><img src={logo} alt=""/></div>

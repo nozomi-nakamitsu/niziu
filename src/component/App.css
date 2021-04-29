@@ -34,6 +34,7 @@
 .DisplayNone{
   opacity: 0;
   transition: .8s;
+  pointer-events: none;
 }
 
 
