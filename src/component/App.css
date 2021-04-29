@@ -43,9 +43,6 @@
 
 
 
-
-
-
 /* 全体 */
 .container{
   width: 100%;
@@ -249,6 +246,101 @@ margin-left: auto;
   transform:translateX(20px) translateY(20px);
   background: #ff0000;
 }
+
+
+/* MV */
+.MVCopntainer{
+  padding-left: 20px;
+  padding-right: 20px;
+ 
+}
+#main {
+  height: auto;
+}
+.ImageArea{
+  position:relative;
+}
+.MVimage{
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+}
+.ondemandVideoRoundedIcon{
+  color:#ffff;
+  position:absolute;
+  top:33%;
+  left:44%;
+}
+.ondemandVideoRoundedIcon:hover{
+  color:#E41495 !important;
+}
+
+#sample01 {
+  overflow: hidden;
+}
+
+#sample01-toggle {
+  width: 50%;
+  padding: 10px;
+  background: #eeeeee;
+  transform: translateX(-100%);
+  transition: all .25s ease;
+}
+
+#sample01-toggle.open {
+  transform: translateX(0);
+}
+
+#sample01-toggle.close {
+  transform: translateX(-100%);
+}
+
+
+
+
+
+
+
+
+
+.ButtonArea{
+  display:flex;
+  justify-content: center;
+  margin-top:20px;
+
+}
+.centerButton{
+  display:flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.leftArrow{
+  margin-right: auto;
+  cursor: pointer;
+}
+.leftArrow:hover{
+  color:#E41495 !important;
+}
+.rightArrow{
+  margin-left: auto;
+  cursor: pointer;
+}
+.rightArrow:hover{
+  color:#E41495 !important;
+}
+.-active{
+  color:#E41495 !important;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 959px) {

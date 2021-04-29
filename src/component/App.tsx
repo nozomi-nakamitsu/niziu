@@ -10,7 +10,7 @@ import DragHandleIcon from '@material-ui/icons/DragHandle';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { NoSimOutlined } from '@material-ui/icons';
 import LoadingModal from "./modal"
-
+import MV from "./MV"
 type Props = {
 
 }
@@ -141,6 +141,7 @@ const App = () => {
     </div>
   </div>
   </div>
+<MV/>
 {/* ナビゲーションボタン */}
   <div className="nabButtonComponent">
     <div className="subButtonArea">
@@ -171,3 +172,4 @@ const App = () => {
 
 
 export default App;
+
