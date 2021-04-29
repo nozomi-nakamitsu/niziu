@@ -68,12 +68,13 @@ const MV = () => {
 
 <>
 <VideoModal videoopen={videoopen} videoclosefunc={()=>closevideoModal()}/>
+<div><h2 className="MemberTitle" style={{ marginLeft: 30}}>MUSIC VIDEO</h2></div>
+<div className="MV">
 <div className="MVCopntainer">
-<div>MUSIC VIDEO</div>
 <div id="main">
   <div className="ImageArea">
   <img src={makeyouhappy} alt=""  className="MVimage"/>
-  <OndemandVideoRoundedIcon className="ondemandVideoRoundedIcon" style={{ fontSize: 40}} onClick={()=>openvideoModal()}/>
+  <OndemandVideoRoundedIcon className="ondemandVideoRoundedIcon" style={{ fontSize: 40 , opacity:0.7}} onClick={()=>openvideoModal()}/>
   </div>
 
 <div className="ButtonArea">
@@ -86,6 +87,7 @@ const MV = () => {
  <ArrowForwardIosTwoToneIcon style={{ fontSize: 20 ,color:" #DDDDDD"}} className="rightArrow" onClick={()=>goForward()}/>
 </div>
 
+</div>
 </div>
 </div>
 </>
