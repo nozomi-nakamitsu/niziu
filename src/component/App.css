@@ -1,0 +1,217 @@
+.container{
+  width: 100%;
+}
+/* header */
+.header {
+ height: 50px;
+ display: flex;
+ align-items: center;
+}
+.headrLeft img{
+  width:80px;
+  height: 80px;
+  margin-left: 15px;
+}
+
+.headrRight{
+margin-left: auto;
+
+}
+/*メインページ */
+.mainContainer{
+  margin: 15px;
+  position: relative;
+
+}
+.mainImg{
+  width:100%;
+  border-radius: 30px;
+}
+.AboutTile{
+  font-size: 1.6em;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 600;
+  letter-spacing: .5em;
+  margin-bottom: 1em;
+  color: #3b39a3;
+  position: relative;
+  z-index: 11;
+}
+.textArea{
+  position:absolute;
+  bottom: 20px;
+  right:20px;
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 30px;
+  width: 500px;
+  height: 400px;
+  margin-right: auto;
+  margin-left:auto;
+  padding: 10px;
+}
+
+/* member-title */
+.MembersContainer{
+  margin: 15px
+  }
+.MemberTitleArea{
+  margin-left: 15px;
+}
+.MemberTitle{
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 400;
+  letter-spacing: .4em;
+  background: -webkit-linear-gradient(left, #ff758c 0%, #ff7eb3 100%);
+  background: linear-gradient(to left, #ff758c 0%, #ff7eb3 100%);
+  color: #fff;
+  padding: .4em 2em .3em;
+  line-height: 1;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+.memberItems{
+  display:flex;
+
+  align-items: start;
+  flex-wrap: wrap;
+}
+.memberItem{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.memberImg{
+  width: 205px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.memberImg{
+  transition-duration: 0.3s;
+}
+.memberImg:hover{
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+.MemberName{
+  margin-left:auto;
+  margin-right:auto;
+
+
+}
+/* ナブボタン */
+.nabButtonComponent{
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.mainButtonArea{
+  position: relative;
+  margin-left: auto;
+}
+.mainButton{
+  width: 100px;/*幅*/
+	height: 100px;/*高さ*/
+	border-radius: 50%;/*角丸*/
+  border:1px solid #645FF1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.mainButtonLogo{
+  width:70px;
+  height:70px;
+}
+.CircleIcon{
+  font-size: large;
+  color:#645FF1;
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+}
+
+.subButton{
+  width: 60px;/*幅*/
+	height: 60px;/*高さ*/
+	border-radius: 50%;/*角丸*/
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  position: absolute;
+  bottom:20px;
+  right:20px;
+  transition: all 500ms 0s ease;
+}
+.withU{
+  transform:translateX(10px) translateY(10px);
+  /* position: absolute; */
+  bottom:30px;
+  right:120px;
+  transition-delay: 0.5s;
+}
+.Mobile{
+  transform:translateX(10px) translateY(10px);
+  /* position: absolute; */
+  bottom:100px;
+  right:80px;
+  transition-delay: 0.6s;
+
+}
+.About{
+  transform:translateX(10px) translateY(10px);
+  /* /* position: absolute; */
+  bottom:120px;
+  right:10px;
+  transition-delay: 0.7s;
+
+}
+.start{
+  position: absolute;
+  bottom:20px;
+  right:20px;
+}
+.active {
+  transform:translateX(20px) translateY(20px);
+  background: #ff0000;
+}
+
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+  .mainContainer{
+    margin: 15px;
+    position: none;
+    }
+    .mainImg{
+      width:100%;
+      border-radius: 30px;
+    }
+    .AboutTile{
+      font-size: 1.6em;
+      font-family: 'Yantramanav', sans-serif;
+      font-weight: 600;
+      letter-spacing: .5em;
+      margin-bottom: 1em;
+      color: #3b39a3;
+      position: relative;
+      z-index: 11;
+    }
+
+}
+
+
+
+
