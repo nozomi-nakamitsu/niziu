@@ -21,8 +21,16 @@ const App = () => {
     });
   })
   useEffect(() => {
-    console.log('keyState has been incremented!');
-  });
+    (async () => {
+      const res1 = await  lordingHorizen();
+        window.setTimeout(function(){
+        var LoadingPage =document.getElementsByClassName("LoadingPage")
+        LoadingPage[0].classList.add("DisplayNone")
+          }, 1000);
+        })();
+  }, []);
+
+
   const active= ()=>{
     var subbuttonList =document.getElementsByClassName("subButton")
     subbuttonList[0].classList.add("withU")
@@ -38,9 +46,22 @@ const App = () => {
     subbuttonList[2].classList.remove("About")
     setOnActive(!onactive)
   }
+  const lordingHorizen =()=>{
+    var lordingHorizen =document.getElementsByClassName("JS_ScrollAnimationItem")
+    lordingHorizen[0].classList.add("isActive")
+
+  }
+
+
+
   return (
 
-
+<>
+  {/* ロード画面 */}
+<div className="LoadingPage">
+<img src={logo} alt=""/>
+<div className="Text"><span className="Text-Span JS_ScrollAnimationItem"></span></div>
+</div>
 <div className="container">
   {/* header */}
   <div className="header">
@@ -119,7 +140,7 @@ const App = () => {
 
   {/* ナビゲーションボタンここまで */}
 </div>
-
+</>
 
 
 

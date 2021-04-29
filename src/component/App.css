@@ -1,6 +1,55 @@
+/* ロードページ */
+.LoadingPage{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color:#fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+/* 水平線部分 */
+.Text-Span {
+  position: relative;
+  z-index: 1;
+}
+.Text-Span:after {
+  content: '';
+  position: absolute;
+
+  left: -365px;
+  top:400px;
+  width: 0%;
+  height: 4px;
+  background: #E8430F;
+  z-index: -1;
+  transition: all 1.2s;
+}
+.Text-Span.isActive:after {
+  width: 280px;
+}
+.DisplayNone{
+  opacity: 0;
+  transition: .8s;
+}
+
+
+
+
+
+
+
+
+
+
+/* 全体 */
 .container{
   width: 100%;
 }
+
 /* header */
 .header {
  height: 50px;
@@ -26,7 +75,19 @@ margin-left: auto;
 .mainImg{
   width:100%;
   border-radius: 30px;
+  animation-name: fadeup;
+  animation-duration: 2s;
 }
+@keyframes fadeup {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  }
 .AboutTile{
   font-size: 1.6em;
   font-family: 'Yantramanav', sans-serif;
