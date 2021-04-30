@@ -28,13 +28,17 @@ const App = () => {
   useEffect(() => {
     (async () => {
       const res1 = await  lordingHorizen();
-         window.setTimeout(function(){
-        var LoadingPage =document.getElementsByClassName("LoadingPage")
-        LoadingPage[0].classList.add("DisplayNone")
+        window.setTimeout(function(){
+          lordingPageDisplayNone()
+          lordingDiamond()
           }, 1000);
         window.setTimeout(function(){
+          DiamondDisplayNone()
+          MainImageFadeIn()
+              }, 2500);
+        window.setTimeout(function(){
         openModal()
-            }, 2500);
+            }, 4000);
         })();
   }, []);
 
@@ -57,8 +61,24 @@ const App = () => {
   const lordingHorizen =()=>{
     var lordingHorizen =document.getElementsByClassName("JS_ScrollAnimationItem")
     lordingHorizen[0].classList.add("isActive")
-
   }
+  const lordingDiamond =()=>{
+    var lordingHorizen =document.getElementsByClassName("diamondAction")
+    lordingHorizen[0].classList.add("diamond")
+  }
+  const lordingPageDisplayNone =()=>{
+    var LoadingPage =document.getElementsByClassName("LoadingPage")
+    LoadingPage[0].classList.add("DisplayNone")
+  }
+  const DiamondDisplayNone =()=>{
+    var LoadingPage2 =document.getElementsByClassName("LoadingPage2")
+    LoadingPage2[0].classList.add("DisplayNone")
+  }
+  const MainImageFadeIn =()=>{
+    var mainImg =document.getElementsByClassName("mainImg")
+    mainImg[0].classList.add("imageAnimation")
+  }
+
 
 
   // グループメンバー追加モーダルを表示
@@ -74,10 +94,14 @@ const App = () => {
   return (
 
 <>
-  {/* ロード画面 */}
+  {/* ロード画面1 */}
   <div className="LoadingPage">
   <img src={logo} alt=""/>
   <div className="Text"><span className="Text-Span JS_ScrollAnimationItem"></span></div>
+  </div>
+  {/* ロード画面 2*/}
+  <div className="LoadingPage2">
+    <div className=" diamondAction"></div>
   </div>
 <div className="container">
 <LoadingModal open={open} closefunc={()=>closeModal()}></LoadingModal >

@@ -19,28 +19,60 @@
 .Text-Span:after {
   content: '';
   position: absolute;
-
   left: -365px;
   top:400px;
   width: 0%;
   height: 4px;
   background: #E8430F;
+  opacity:0.8;
   z-index: -1;
   transition: all 1.2s;
 }
 .Text-Span.isActive:after {
   width: 280px;
 }
+
 .DisplayNone{
   opacity: 0;
   transition: .8s;
   pointer-events: none;
 }
 
+/*ダイヤモンド */
+.LoadingPage2{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color:#fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+}
+.diamond {
+  width:200px;
+  height:200px;
+  background: #E8430F;
+  opacity:0.8;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  animation: zoom-in-anim 3s;
 
+  }
 
-
-
+  @keyframes zoom-in-anim {
+    0% {
+    transform: rotate(-45deg) scale(1);
+    }
+    100% {
+    transform: rotate(-45deg) scale(4);
+    }
+  }
 
 
 /* 全体 */
@@ -73,6 +105,8 @@ margin-left: auto;
 .mainImg{
   width:100%;
   border-radius: 30px;
+}
+.imageAnimation{
   animation-name: fadeup;
   animation-duration: 2s;
 }
