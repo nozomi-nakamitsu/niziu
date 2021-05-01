@@ -27,6 +27,9 @@ viewはcomponentディレクトリに書いてます！mainのビューはapp.ts
 cssは App .cssもしくは component上にstyledComponentを使って書いてあります！
 ``` 
 # ローカルでの起動方法
-##1 yarn install
-##2 yarn start
+git clone
+## 1 
+yarn install
+## 2
+yarn start
 　
