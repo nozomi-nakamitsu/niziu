@@ -19,8 +19,8 @@
 .Text-Span:after {
   content: '';
   position: absolute;
-  left: -365px;
-  top:400px;
+  left:-500px;
+  top:700px;
   width: 0%;
   height: 4px;
   background: #E8430F;
@@ -292,6 +292,7 @@ margin-left: auto;
 .MV{
   display:flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .MVCopntainer{
   padding-left: 20px;

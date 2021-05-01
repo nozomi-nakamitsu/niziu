@@ -48,7 +48,7 @@ align-items: center;
 const Dialogcomponent= styled.div`
   img{
   width:auto;
-  height: 200px;
+  height: 300px;
   }
   h3{
     text-align:center
