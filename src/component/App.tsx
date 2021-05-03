@@ -97,7 +97,8 @@ const App = () => {
   {/* ロード画面1 */}
   <div className="LoadingPage">
   <img src={logo} alt=""/>
-  <div className="Text"><span className="Text-Span JS_ScrollAnimationItem"></span></div>
+  <div className="Text-Span JS_ScrollAnimationItem"></div>
+  {/* <div className="Text"><span className="Text-Span JS_ScrollAnimationItem"></span></div> */}
   </div>
   {/* ロード画面 2*/}
   <div className="LoadingPage2">
