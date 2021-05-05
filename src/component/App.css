@@ -180,13 +180,18 @@ margin-left: auto;
   margin-left: 5px;
   margin-right: 5px;
 }
-.memberImg{
-  width: 150px;
+.box{
+  width:150px;
   height: 230px;
+  margin-bottom:20px ;
+  margin-top: 10px;
+}
+.memberImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   overflow: hidden;
   border-radius: 20px;
-  margin-bottom: 10px;
-  margin-top: 10px;
   cursor: pointer;
 }
 .memberImg{
@@ -398,10 +403,10 @@ body {
       position: relative;
       z-index: 11;
     }
-    .memberImg{
+    /* .memberImg{
       width: 90px;
       height: 140px;
-    }
+    } */
     .Text-Span {
       position: absolute;
       left:30%;

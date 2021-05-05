@@ -129,43 +129,63 @@ const App = () => {
   <h2 className="MemberTitle">Member</h2></div>
   <div className="memberItems">
     <div className="memberItem">
+      <div className="box">
       <img src={RIO} alt="" className="memberImg"/>
+      </div>
       <div className="MemberName">RIO</div>
     </div>
     <div className="memberItem">
+      <div className="box">
       <img src={RIO} alt="" className="memberImg"/>
+      </div>
       <div className="MemberName">RIO</div>
     </div>
     <div className="memberItem">
+      <div className="box">
       <img src={RIO} alt="" className="memberImg"/>
+      </div>
       <div className="MemberName">RIO</div>
     </div>
     <div className="memberItem">
+      <div className="box">
       <img src={RIO} alt="" className="memberImg"/>
+      </div>
       <div className="MemberName">RIO</div>
     </div>
     <div className="memberItem">
+      <div className="box">
       <img src={RIO} alt="" className="memberImg"/>
+      </div>
       <div className="MemberName">RIO</div>
     </div>
     <div className="memberItem">
+      <div className="box">
       <img src={RIO} alt="" className="memberImg"/>
+      </div>
       <div className="MemberName">RIO</div>
     </div>
     <div className="memberItem">
+      <div className="box">
       <img src={RIO} alt="" className="memberImg"/>
+      </div>
       <div className="MemberName">RIO</div>
     </div>
     <div className="memberItem">
+      <div className="box">
       <img src={RIO} alt="" className="memberImg"/>
+      </div>
       <div className="MemberName">RIO</div>
     </div>
     <div className="memberItem">
+      <div className="box">
       <img src={RIO} alt="" className="memberImg"/>
+      </div>
       <div className="MemberName">RIO</div>
     </div>
+
   </div>
   </div>
+
 <MV/>
 {/* ナビゲーションボタン */}
   <div className="nabButtonComponent">
